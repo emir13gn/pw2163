@@ -1,0 +1,11 @@
+commit ce0812338a13e69e56a778ecf5e36e10f750bd40
+Author: CCDM20 <emir_gn13@hotmail.com>
+Date:   Fri Sep 2 11:31:48 2016 -0600
+
+    cambio en mi readme.txt
+
+commit 2f7723db66a585ca5526b33eecf16fe5e578ab99
+Author: CCDM20 <emir_gn13@hotmail.com>
+Date:   Tue Aug 30 11:56:16 2016 -0600
+
+    Commit inicial con readme.txt
