@@ -1,0 +1,26 @@
+/*selectores*/
+/*1.-Etiquetas*/
+/*2.-Identificadores*/
+/*3.-Clases*/
+body	/*selector - etiqueta*/
+{
+	/*atributo*/
+
+	border: 10px solid red;
+	border-radius: 5px;
+	max-width: 1024px;
+
+}
+
+header{
+	background: lightgrey; /*fondo*/
+	border: 10px solid orange;
+	color: black; /*letra */
+	text-align: center; /*alineacion*/
+}
+header nav ul li{
+	/*border :1px solid yellow;*/
+	background: tomato; 
+	border-radius: 5px;
+	display: inline-block; /*rompe modelo de caja/*
+}
