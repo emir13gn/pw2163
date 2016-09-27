@@ -16,11 +16,20 @@ header{
 	background: lightgrey; /*fondo*/
 	border: 10px solid orange;
 	color: black; /*letra */
+	/*padding: 0px 0px 100px 0px;*/
 	text-align: center; /*alineacion*/
 }
 header nav ul li{
 	/*border :1px solid yellow;*/
 	background: tomato; 
 	border-radius: 5px;
-	display: inline-block; /*rompe modelo de caja/*
+	box-shadow: 5px 5px;
+	display: inline-block; /*rompe modelo de caja*/
+	margin: 0px 10px 100px 10px;
+	padding: 5px 10px;
+	width: 80px;
 }
+header nav ul li:hover{
+background: black;
+color: tomato ;
+};
