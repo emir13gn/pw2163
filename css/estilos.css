@@ -8,6 +8,7 @@ body	/*selector - etiqueta*/
 
 	border: 10px solid red;
 	border-radius: 5px;
+	font-size: 16px;
 	margin: 0px auto;
 	max-width: 1024px;
 
@@ -34,6 +35,21 @@ header nav ul li{
 	margin: 0px 10px 100px 10px;
 	padding: 5px 10px;
 	width: 80px;
+}
+main section article {
+	/*border: 1px solid red;*/
+	display: inline-block;
+	vertical-align: top; /*pregunta de examnen*/
+	width: 24%;
+}
+footer{
+	border: 1px solid orange;
+	font-size: 1,5em;
+	text-align: center;
+}
+
+main{
+	margin: 15px 0px 0px 0px;
 }
 header nav ul li:hover{
 background: black;
