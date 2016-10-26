@@ -63,6 +63,18 @@ header nav ul li
 	width: 30%;
 }
 
+#secc01art02 ul{
+	list-style: none;
+
+}
+
+#secc01art02 li:before {
+	content: "·"; 
+	color: lightpink;
+	font-size: 1.2em; 
+
+}
+
 .wecanoffer{
 	color:#FF0099;
 	font-size: 3.5em;
@@ -87,5 +99,31 @@ header nav ul li
 
  }
 
+ .colorrosa{
+ 	color: #FF0099;
 
+ }
+
+ .colorazul{
+ 	color:	#16BEF8;
+
+ }
+
+.colorverde{
+	color: #A6DE47;
+
+}
+
+.colorazul, .colorverde, .colorrosa{
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#terceraseccion article img{
+	vertical-align: middle;
+}
+
+#mailinglist {
+	padding-top: 60px;
+}
 
