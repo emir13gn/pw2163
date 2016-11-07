@@ -1,61 +1,75 @@
-<!Doctype>
-<html lang="es">
+<!DOCTYPE html>
+<html lang= "es">
 <head>
 	<meta charset="UTF-8">
-	<title>Calculadora Basica</title>
+	<title>Calculadora básica</title>
 	<link rel="stylesheet" type="text/css" href="estiloscalculadora.css">
-	<script src="js/calculadora.js" type="text/javascript"></script>
+	<script src="js/calculadora.js"> </script>
+
 </head>
 <body>
-	<h1>Calculadora Basica</h1>
-	<form action="#" name="calculadora" id="calculadora">
-		<table>
-			<tr>
-				<td colspan=4>
-					<input type="text" size=20 value=0 name="operando1">
-				</td>
+	<h1>Calculadora Básica</h1>
+	<form action="#" name="calculadora" id="calucladora">
 
-			</tr>
-			<tr>
-				<td colspan=4>
-					<input type="text" size=20 value=0 name="operando2">
-				</td>
+	<table>
+		<tr>
+			<td colspan=4>
+				<input type="text" size=20 value=0 name="operando1">
+			</td>
+		</tr>
+		<tr>
+			<td colspan=4>
+				<input type="text" size=20 value=0 name="operando2">
+			</td>
+		</tr>
 
-			</tr>
 			<tr>
-				<td colspan=4>
-					<input type="text" size=20 value=0 name="resultado">
-				</td>
-			</tr>
-			<tr>
-				<td><input type="button" value="7" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="8" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="9" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="*" onclick="operadores(this.value);"></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="4" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="5" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="6" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="-" onclick="operadores(this.value);"></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="1" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="2" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="3" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="+" onclick="operadores(this.value);"></td>
-			</tr>
-			<tr>
-				<td><input type="button" value="C" onlcick="limpiar();"></td>
-				<td><input type="button" value="0" onclick="numeros(this.value);"></td>
-				<td><input type="button" value="=" onlcick="igual();"></td>
-				<td><input type="button" value="/" onclick="operadores(this.value);"></td>
-			</tr>
+			<td colspan=4>
+				<input type="text" size=20 value=0 name="resultado">
+			</td>
+		</tr>
+		<tr>
+<td> <input type="Button" value="7" onclick="numeros('7')";> </td>
+<td> <input type="Button" value="8" onclick="numeros('8')";> </td>
+<td> <input type="Button" value="9" onclick="numeros(this.value)";> </td>
+<td> <input type="Button" value="*" onclick="operadores(this.value);"> </td>
 
-		</table>
 
+		</tr>
+
+	<tr>
+<td> <input type="Button" value="4" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="5" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="6" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="-" onclick="operadores(this.value);"> </td>
+
+		</tr>
+
+	<tr>
+<td> <input type="Button" value="1" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="2" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="3" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="+" onclick="operadores(this.value);"> </td>
+
+
+		</tr>
+
+	<tr>
+<td> <input type="Button" value="CE" onclick="limpiar();"> </td>
+<td> <input type="Button" value="0" onclick="numeros(this.value);"> </td>
+<td> <input type="Button" value="=" onclick="igual();"> </td>
+<td> <input type="Button" value="/" onclick="operadores(this.value);"> </td>
+
+
+		</tr>
+
+
+	</table>
 
 	</form>
 
+
 </body>
 </html>
+
+
