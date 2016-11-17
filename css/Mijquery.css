@@ -1,0 +1,8 @@
+#txtNombre{
+	display:none;
+	/*visibility: none;*/
+}
+
+#imgFoto{
+	border-radius: 500px;
+}
