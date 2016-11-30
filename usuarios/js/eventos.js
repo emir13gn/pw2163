@@ -1,32 +1,56 @@
-var inicioUsuarios = function(){
+var inicioUsuarios = function()
+{
+	
+	var validaUsuario = function()
+	{
 
-	var validaUsuario = function(){
-		var usuario = $("#txtUsuario".val());
-		var clave = $"#txtClave".val();
-		var parametros ="opcion=valida"+"&usuario"+usuario+"&clave"+clave+"&id="+Math.random();
-		if(usuario!="" && clave!=""){
-
-		$.ajax({
-			cache:false,type:"POST",dataType:"json",url:"php/utilerias.php",data:parametros,success: function(response){
-				if(response.respuesta==true){
-					$("#entradaUsuario").hide("slow");
-					$("nav").show("slow");
+		//Extraer los datos de los input en el HTML
+		var usuario = $("#txtUsuario").val();
+		var clave   = $("#txtClave").val();
+		//Preparar los parámetros para AJAX
+		var parametros = "opcion=valida"+
+		                 "&usuario="+usuario+
+		                 "&clave="+clave+
+		                 "&id="+Math.random();
+		
+		//Validamos que no esten vacíos
+		if(usuario!="" && clave!="")
+		{
+			//Hacemos la petición remota
+			$.ajax({
+				cache:false,
+				type:"POST",
+				dataType:"json",
+				url: "php/utilerias.php",
+				data:parametros,
+				success: function(response){
+					if(response.respuesta == true)
+					{    
+						$("#entradaUsuario").hide("slow");
+						$("nav").show("slow"); 
+					}
+					else
+					{
+						alert("Datos incorrectos :(");
+					}
+				},
+				error: function(xhr,ajaxOptions,thrownError){
+					//Si todo sale mal
 				}
-
-			},
-			error: function(xhr,ajaxOptions,thrownError){
-				
-			}
-		});
-
-
+			});
 		}
-		else {
-			alert("Usuario y clave son Obligatorios")
+		else
+		{
+			alert("Usuario y clave son obligatorios");
 		}
-
-
-	} 
-	$("#btnValidaUsuario").on("click",validaUsuario)
+	}
+	$("#btnValidaUsuario").on("click",validaUsuario);
+	var teclaClave = function(tecla){
+		if(tecla.which == 13){
+			validaUsuario();
+		}
+	}
+	$("#txtClave").on("keypress",teclaClave);
 }
+//Evento inicial
 $(document).on("ready",inicioUsuarios);

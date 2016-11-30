@@ -37,9 +37,10 @@
 		mysql_query($consulta);
 		//Preguntamos si hubo inserción
 		if(mysql_affected_rows() > 0)
-		{
-			print "Registro guardado";
+		{		
+			print "Registro guardado<br>";	
 			print "<a href='ejemplo.php'>Regresar</a>";
+	
 		}
 		else
 		{
@@ -56,3 +57,5 @@
 			break;
 	}
 ?>
+
+
